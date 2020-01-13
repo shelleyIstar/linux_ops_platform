@@ -20,10 +20,10 @@ export function _onCreate() {
     app.use(plugin);
   });
   
-  app.model({ namespace: 'global', ...(require('/Users/ristar/Documents/fwj/demo-client/src/models/global.js').default) });
-app.model({ namespace: 'login', ...(require('/Users/ristar/Documents/fwj/demo-client/src/models/login.js').default) });
-app.model({ namespace: 'setting', ...(require('/Users/ristar/Documents/fwj/demo-client/src/models/setting.js').default) });
-app.model({ namespace: 'user', ...(require('/Users/ristar/Documents/fwj/demo-client/src/models/user.js').default) });
+  app.model({ namespace: 'global', ...(require('/Users/ristar/Documents/fwj/linux_ops_platform/src/models/global.js').default) });
+app.model({ namespace: 'login', ...(require('/Users/ristar/Documents/fwj/linux_ops_platform/src/models/login.js').default) });
+app.model({ namespace: 'setting', ...(require('/Users/ristar/Documents/fwj/linux_ops_platform/src/models/setting.js').default) });
+app.model({ namespace: 'user', ...(require('/Users/ristar/Documents/fwj/linux_ops_platform/src/models/user.js').default) });
   return app;
 }
 

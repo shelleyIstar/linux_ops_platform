@@ -8,7 +8,7 @@ import {
 import dynamic from 'umi/dynamic';
 import renderRoutes from 'umi/lib/renderRoutes';
 import history from '@@/history';
-import RendererWrapper0 from '/Users/ristar/Documents/fwj/demo-client/src/pages/.umi/LocaleWrapper.jsx';
+import RendererWrapper0 from '/Users/ristar/Documents/fwj/linux_ops_platform/src/pages/.umi/LocaleWrapper.jsx';
 import { routerRedux, dynamic as _dvaDynamic } from 'dva';
 
 const Router = routerRedux.ConnectedRouter;
@@ -20,7 +20,7 @@ const routes = [
       ? _dvaDynamic({
           component: () =>
             import(/* webpackChunkName: "layouts__UserLayout" */ '../../layouts/UserLayout'),
-          LoadingComponent: require('/Users/ristar/Documents/fwj/demo-client/src/components/PageLoading/index')
+          LoadingComponent: require('/Users/ristar/Documents/fwj/linux_ops_platform/src/components/PageLoading/index')
             .default,
         })
       : require('../../layouts/UserLayout').default,
@@ -32,7 +32,7 @@ const routes = [
           ? _dvaDynamic({
               component: () =>
                 import(/* webpackChunkName: "p__user__login" */ '../user/login'),
-              LoadingComponent: require('/Users/ristar/Documents/fwj/demo-client/src/components/PageLoading/index')
+              LoadingComponent: require('/Users/ristar/Documents/fwj/linux_ops_platform/src/components/PageLoading/index')
                 .default,
             })
           : require('../user/login').default,
@@ -41,7 +41,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('/Users/ristar/Documents/fwj/demo-client/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('/Users/ristar/Documents/fwj/linux_ops_platform/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -54,7 +54,7 @@ const routes = [
       ? _dvaDynamic({
           component: () =>
             import(/* webpackChunkName: "layouts__SecurityLayout" */ '../../layouts/SecurityLayout'),
-          LoadingComponent: require('/Users/ristar/Documents/fwj/demo-client/src/components/PageLoading/index')
+          LoadingComponent: require('/Users/ristar/Documents/fwj/linux_ops_platform/src/components/PageLoading/index')
             .default,
         })
       : require('../../layouts/SecurityLayout').default,
@@ -65,7 +65,7 @@ const routes = [
           ? _dvaDynamic({
               component: () =>
                 import(/* webpackChunkName: "layouts__BasicLayout" */ '../../layouts/BasicLayout'),
-              LoadingComponent: require('/Users/ristar/Documents/fwj/demo-client/src/components/PageLoading/index')
+              LoadingComponent: require('/Users/ristar/Documents/fwj/linux_ops_platform/src/components/PageLoading/index')
                 .default,
             })
           : require('../../layouts/BasicLayout').default,
@@ -84,7 +84,7 @@ const routes = [
               ? _dvaDynamic({
                   app: require('@tmp/dva').getApp(),
                   models: () => [
-                    import(/* webpackChunkName: 'p__SearchPage__model.js' */ '/Users/ristar/Documents/fwj/demo-client/src/pages/SearchPage/model.js').then(
+                    import(/* webpackChunkName: 'p__SearchPage__model.js' */ '/Users/ristar/Documents/fwj/linux_ops_platform/src/pages/SearchPage/model.js').then(
                       m => {
                         return { namespace: 'model', ...m.default };
                       },
@@ -92,7 +92,7 @@ const routes = [
                   ],
                   component: () =>
                     import(/* webpackChunkName: "p__SearchPage" */ '../SearchPage'),
-                  LoadingComponent: require('/Users/ristar/Documents/fwj/demo-client/src/components/PageLoading/index')
+                  LoadingComponent: require('/Users/ristar/Documents/fwj/linux_ops_platform/src/components/PageLoading/index')
                     .default,
                 })
               : require('../SearchPage').default,
@@ -106,7 +106,7 @@ const routes = [
               ? _dvaDynamic({
                   component: () =>
                     import(/* webpackChunkName: "p__Admin" */ '../Admin'),
-                  LoadingComponent: require('/Users/ristar/Documents/fwj/demo-client/src/components/PageLoading/index')
+                  LoadingComponent: require('/Users/ristar/Documents/fwj/linux_ops_platform/src/components/PageLoading/index')
                     .default,
                 })
               : require('../Admin').default,
@@ -118,7 +118,7 @@ const routes = [
               ? _dvaDynamic({
                   component: () =>
                     import(/* webpackChunkName: "p__404" */ '../404'),
-                  LoadingComponent: require('/Users/ristar/Documents/fwj/demo-client/src/components/PageLoading/index')
+                  LoadingComponent: require('/Users/ristar/Documents/fwj/linux_ops_platform/src/components/PageLoading/index')
                     .default,
                 })
               : require('../404').default,
@@ -127,7 +127,7 @@ const routes = [
           {
             component: () =>
               React.createElement(
-                require('/Users/ristar/Documents/fwj/demo-client/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+                require('/Users/ristar/Documents/fwj/linux_ops_platform/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
                   .default,
                 { pagesPath: 'src/pages', hasRoutesInConfig: true },
               ),
@@ -139,7 +139,7 @@ const routes = [
           ? _dvaDynamic({
               component: () =>
                 import(/* webpackChunkName: "p__404" */ '../404'),
-              LoadingComponent: require('/Users/ristar/Documents/fwj/demo-client/src/components/PageLoading/index')
+              LoadingComponent: require('/Users/ristar/Documents/fwj/linux_ops_platform/src/components/PageLoading/index')
                 .default,
             })
           : require('../404').default,
@@ -148,7 +148,7 @@ const routes = [
       {
         component: () =>
           React.createElement(
-            require('/Users/ristar/Documents/fwj/demo-client/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+            require('/Users/ristar/Documents/fwj/linux_ops_platform/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
               .default,
             { pagesPath: 'src/pages', hasRoutesInConfig: true },
           ),
@@ -159,7 +159,7 @@ const routes = [
     component: __IS_BROWSER
       ? _dvaDynamic({
           component: () => import(/* webpackChunkName: "p__404" */ '../404'),
-          LoadingComponent: require('/Users/ristar/Documents/fwj/demo-client/src/components/PageLoading/index')
+          LoadingComponent: require('/Users/ristar/Documents/fwj/linux_ops_platform/src/components/PageLoading/index')
             .default,
         })
       : require('../404').default,
@@ -168,7 +168,7 @@ const routes = [
   {
     component: () =>
       React.createElement(
-        require('/Users/ristar/Documents/fwj/demo-client/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
+        require('/Users/ristar/Documents/fwj/linux_ops_platform/node_modules/umi-build-dev/lib/plugins/404/NotFound.js')
           .default,
         { pagesPath: 'src/pages', hasRoutesInConfig: true },
       ),
